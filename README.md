@@ -4,16 +4,20 @@ JSONApi [![Download](https://api.bintray.com/packages/faogustavo/maven/JSONApi/i
 A simple way to implement JSONApi specifications to convert Models to Json and Json to Models.
 
 ## INSTALL
-Add this dependecy from jCenter:
-
+Add jitpack.io as a repository to your project's build.gradle:
 ```gradle
-compile 'com.gustavofao:JSONApi:1.0.6@aar'
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
 ```
 
-If the installation fails, add this line to your gradle top level:
+Then add the dependency:
 
 ```gradle
-maven { url "http://dl.bintray.com/faogustavo/maven" }
+compile "com.github.arctouch-emanuelmachado:JSONApi:1.0.7"
 ```
 
 ## USAGE
