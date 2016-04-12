@@ -224,6 +224,8 @@ public class JSONApiConverter {
                                 }
                             }
                             currentField.set(resource, arrayData);
+                        } else if (value instanceof JSONObject) {
+                            currentField.set(resource, value);
                         }
                     } catch (Exception ex) {
                         System.err.println(String.format("Error setting attribute %s", attr));
