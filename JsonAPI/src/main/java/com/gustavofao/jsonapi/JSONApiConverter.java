@@ -107,6 +107,13 @@ public class JSONApiConverter {
                     String key = getResourceTag(each);
                     includes.put(key, resourceFromJson(each, includes));
                 }
+                // Second pass
+                for (int i = 0; i < included.length(); i++) {
+                    JSONObject each = included.getJSONObject(i);
+                    String key = getResourceTag(each);
+                    includes.remove(key);
+                    includes.put(key, resourceFromJson(each, includes));
+                }
             }
 
             if (!json.isNull("data")) {
