@@ -17,7 +17,7 @@ allprojects {
 Then add the dependency:
 
 ```gradle
-compile "com.github.arctouch-emanuelmachado:JSONApi:1.0.7"
+compile "com.github.arctouch-emanuelmachado:JSONApi:1.0.8"
 ```
 
 ## USAGE
