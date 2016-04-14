@@ -235,8 +235,6 @@ public class JSONApiConverter {
                             currentField.set(resource, value);
                         }
                     } catch (Exception ex) {
-                        System.err.println(String.format("Error setting attribute %s", attr));
-                        ex.printStackTrace();
                     }
 
                     currentField.setAccessible(oldAccessible);
